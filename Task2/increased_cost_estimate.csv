@@ -1,0 +1,24 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),initial_cost_estimate,Amazon Route 53,0,183,2196,USD,"Hosted Zones (1), Number of Elastic Network Interfaces (2)"
+My Estimate,US East (N. Virginia),initial_cost_estimate,Amazon CloudFront,0,102.04,1224.48,USD,"Data transfer out to internet (1 TB per month), Number of requests (HTTPS) (15000000 per month)"
+My Estimate,US East (N. Virginia),initial_cost_estimate,VPN Connection,0,0,0,USD,Working days per month (22)
+My Estimate,US East (N. Virginia),initial_cost_estimate,Network Address Translation (NAT) Gateway,0,250.02,3000.24,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),increased,Amazon EC2,0,379.83,4557.96,USD,"Operating system (Linux), Quantity (4), Pricing strategy (EC2 Instance Savings Plans 3 Year No Upfront), Storage amount (30 GB), Instance type (t3.large), Provisioning IOPS io1 (1000)"
+My Estimate,US East (N. Virginia),increased,S3 Standard,3.2768,235.52,2829.52,USD,"S3 Standard storage (10 TB per month), S3 Standard Average Object Size (16 MB)"
+My Estimate,US East (N. Virginia),increased,Data Transfer,0,204.8,2457.6,USD,"DT Inbound: Internet (0 TB per month), DT Outbound: Internet (2 TB per month), DT Outbound: US East (Ohio) (2 TB per month)"
+My Estimate,US East (N. Virginia),initial_cost_estimate,Application Load Balancer,0,32.81,393.72,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),initial_cost_estimate,Classic Load Balancer,0,34.63,415.56,USD,"Number of Classic Load Balancers (1), Processed bytes per CLB (2 TB per month)"
+My Estimate,US East (N. Virginia),increased,Amazon RDS for PostgreSQL,0,8076,96912,USD,"Storage volume (Provisioned IOPS SSD (io1)), Provisioning IOPS (10000), Storage amount (3 TB per month), Nodes (1), Instance Type (db.m6gd.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ (readable standbys)), Pricing Model (OnDemand), Additional backup storage (9 TB)"
+My Estimate,US West (N. California),,Amazon EC2,0,465.16,5581.92,USD,"Operating system (Linux), Quantity (4), Pricing strategy (EC2 Instance Savings Plans 3 Year No Upfront), Storage amount (30 GB), Instance type (t2.large), Provisioning IOPS io2 (1000)"
+My Estimate,US West (N. California),increased,Application Load Balancer,0,34.78,417.36,USD,Number of Application Load Balancers (1)
+My Estimate,US West (N. California),increased,Classic Load Balancer,0,36.82,441.84,USD,"Number of Classic Load Balancers (1), Processed bytes per CLB (2 TB per month)"
+My Estimate,US West (N. California),increased,Amazon RDS for PostgreSQL,0,6041.122,72493.46,USD,"Storage volume (Provisioned IOPS SSD (io1)), Provisioning IOPS (10000), Storage amount (3 TB per month), Nodes (1), Instance Type (db.m6g.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (9 TB)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+ANGELO'S NOTES,,,,,,,,
+Increased EC2 to xlarge with provisioned IOPS,,,,,,,,
+Spread EC2 and RDS to 2 different regions along with LB and gateways,,,,,,,,
